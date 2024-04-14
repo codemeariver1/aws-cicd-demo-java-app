@@ -16,5 +16,5 @@ phases:
       - echo 'Configuring NGINX'
 artifacts:
   files:
-    - '**/*'
-  base-directory: var
+    - var/**/*
+    
