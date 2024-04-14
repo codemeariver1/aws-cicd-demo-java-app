@@ -3,18 +3,17 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing NGINX - echo apt-get install NGINX"
+      - echo 'Installing NGINX - echo apt-get install NGINX'
       - sudo apt-get update
       - sudo apt-get install nginx -y
   build:
     commands:
-      - echo "Build started on $(date)"
+      - echo 'Build started on $(date)'
       - mkdir -p var/www/html
       - cp index.html var/www/html
   post_build:
     commands:
-      - echo "Configuring NGINX"
+      - echo 'Configuring NGINX'
 artifacts:
   files:
     - '**/*'
-  base-directory: var
