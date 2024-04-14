@@ -14,4 +14,4 @@ phases:
   post_build:
     commands:
       - echo 'Configuring NGINX'
-      - aws s3 sync var/ s3://aws-cicd-demo-java-app-artifacts
+      - aws s3 sync ./var s3://aws-cicd-demo-java-app-artifacts
