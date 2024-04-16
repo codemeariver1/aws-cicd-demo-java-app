@@ -14,4 +14,9 @@ phases:
   post_build:
     commands:
       - echo 'Configuring NGINX'
-      - aws s3 sync var/ s3://aws-cicd-demo-java-app-artifacts/aws-cicd-demo-java-app/var
+#      - aws s3 sync var/ s3://aws-cicd-demo-java-app-artifacts/aws-cicd-demo-java-app/var
+#      - aws s3 sync . s3://aws-cicd-demo-java-app-artifacts/aws-cicd-demo-java-app --exclude * --include appspec.yaml
+#        --include install_nginx.sh --install start_nginx.sh
+artifacts:
+  files:
+    - '**/*'
