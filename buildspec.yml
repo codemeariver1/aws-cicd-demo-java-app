@@ -16,8 +16,8 @@ phases:
       - echo 'Configuring NGINX'
 #      - aws s3 sync var/ s3://aws-cicd-demo-java-app-artifacts/aws-cicd-demo-java-app/var
 #      - aws s3 sync scripts/ s3://aws-cicd-demo-java-app-artifacts/aws-cicd-demo-java-app/scripts
-#      - aws s3 sync . s3://aws-cicd-demo-java-app-artifacts/aws-cicd-demo-java-app --exclude '*' --include 'appspec.yaml'
-#        --include 'buildspec.yaml' --include 'README.md'
+#      - aws s3 sync . s3://aws-cicd-demo-java-app-artifacts/aws-cicd-demo-java-app --exclude '*' --include 'appspec.yml'
+#        --include 'buildspec.yml' --include 'README.md'
 artifacts:
   files:
     - "**/*"
